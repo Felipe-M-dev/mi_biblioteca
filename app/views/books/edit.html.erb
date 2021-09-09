@@ -1,0 +1,8 @@
+<h1>Editing Book</h1>
+
+<%= render 'form', book: @book %>
+
+<%= button_to "Show", @book, :id => "show-btn",
+    :class => "btn btn-primary mt-2", :method => :get %>
+<%= button_to "Back", books_path, :id => "books-path-btn",
+    :class => "btn btn-primary mt-2", :method => :get %>
